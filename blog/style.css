@@ -20,6 +20,7 @@ body {
     
     height: 100vh;
     width: 100vw;
+    width: auto;
 
     display: flex;
 }
@@ -78,4 +79,43 @@ body {
     transform: scale(12) rotate(30000000deg);
     transition-duration: 1800s;
     transition-timing-function: linear;
+}
+/****** Container ********/
+.container {
+
+    max-width: 1280px;
+    margin: auto;
+}
+/***grid layout***/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.two-columns .card {
+    width:  calc((100% - 50px) / 2 );
+}
+.three-columns .card {
+    width:  calc((100% - 100px) / 3 );
+}
+/*** website content***/
+.main-content {
+    margin-top: 100px;
+}
+.vertical-title {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    transform-origin: 0 0;
+    transform: rotate(90deg) translate(5px);
+    position: absolute;
+}
+.footer {
+padding: 30px;
+background-color: DarkSalmon;
+color: white;
+}
+.footer p {
+    max-width: 1280px;
 }
