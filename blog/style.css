@@ -118,4 +118,9 @@ color: white;
 }
 .footer p {
     max-width: 1280px;
+    font-size: 12px;
+}
+.footer2 {
+    text-align: right;
+    float: right;
 }
