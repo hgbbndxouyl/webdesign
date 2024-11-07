@@ -23,6 +23,8 @@ body {
     width: auto;
 
     display: flex;
+    position: relative;
+    z-index: 1001;
 }
 .intro-container {
     color: #765847;
@@ -111,16 +113,66 @@ body {
     transform: rotate(90deg) translate(5px);
     position: absolute;
 }
-.footer {
-padding: 30px;
-background-color: DarkSalmon;
-color: white;
+.website-footer {
+    background-color: aqua;
+    padding: 50px;
 }
-.footer p {
-    max-width: 1280px;
-    font-size: 12px;
+.website-footer .container{
+    display: flex;
+    flex-wrap: wrap;
 }
-.footer2 {
-    text-align: right;
-    float: right;
+.website-footer .summary {
+    width: 33%;
+}
+.website-footer .footer-links{
+    margin-left: auto;
+    list-style: none;
+    columns: 2;
+    gap: 50px;
+}
+.website-footer .footer-item {
+    margin-bottom: 10px;
+}
+.website-footer .footer-link {
+    color: beige;
+    text-decoration: none;
+}
+.website-footer .copyright {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+.navbar {
+    border-color: brown;
+    background-color: #358693;
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar .container {
+    display: flex;
+}
+.navbar a {
+    display: block;
+    color: antiquewhite;
+    text-decoration: none;
+}
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+.nav-link {
+    padding: 30px 20px;
+}
+.navbar-brand {
+    font-family: 'Rubik 80s Fade', 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+    align-content: center;
 }
