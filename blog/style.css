@@ -11,6 +11,12 @@ body {
     line-height: 1.7;
     min-height: 200vh;
 }
+hr {
+    border: none;
+    border-top: 1px solid chartreuse;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
 /****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** INTRO ******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .intro {
     background-image: url(images/leaves.jpg);
@@ -25,6 +31,11 @@ body {
     display: flex;
     position: relative;
     z-index: 1001;
+}
+
+.intro-narrow {
+    height: 75vh;
+    z-index: 990;
 }
 .intro-container {
     color: #765847;
@@ -104,6 +115,11 @@ body {
 .main-content {
     margin-top: 100px;
 }
+.content-narrow {
+    width: 50%;
+    min-width: 640px;
+    margin: auto;
+}
 .vertical-title {
     font-size: 0.9em;
     text-transform: uppercase;
@@ -175,4 +191,22 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     align-content: center;
+}
+/*****stories********/
+.story-header h1 {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+.story-header p {
+    font-size: 1.5em;
+    font-family: 'rubik 80s fade','Courier New', Courier, monospace;
+    font-style: italic;
+    line-height: .3;
+}
+.story-header .byline{
+    margin-top: 10px;
+}
+.story-header .byline *{
+    font-style: normal;
+    display: inline;
 }
