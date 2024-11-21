@@ -210,3 +210,6 @@ hr {
     font-style: normal;
     display: inline;
 }
+.story-content p, .story-content .row {
+    margin-bottom: 50px;
+}
