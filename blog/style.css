@@ -111,6 +111,10 @@ hr {
 .three-columns .card {
     width:  calc((100% - 100px) / 3 );
 }
+.four-columns .card {
+    width:  calc((100% - 150px) / 4 );
+    
+}
 /*** website content***/
 .main-content {
     margin-top: 100px;
@@ -212,4 +216,43 @@ hr {
 }
 .story-content p, .story-content .row {
     margin-bottom: 50px;
+}
+.story-footer {
+    background-color: rgb(255, 126, 255);
+    padding: 100px 50px;
+    margin: 50px auto;
+}
+.story-footer p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+.social-icon {
+    display: block;
+    background-color: aqua;
+margin: 10px;
+padding: 10px;
+transition-property: background-image;
+transition-duration: 1s;
+}
+.social-icon svg {
+    font-size: 69px;
+    display: block;
+    width: 1em;
+    height: 1em;
+    transition-property: fill;
+transition-duration: 1s;
+}
+.social-icon:hover {
+    background-image: url(https://i.redd.it/s2gakj1rx9m41.jpg);
+    background-size: cover;
+}
+.social-icon:hover svg {
+    fill: beige;
+}
+.Il-LibaKeepReading {
+    padding: 69px;
 }
